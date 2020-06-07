@@ -1,20 +1,26 @@
 Vue.component("app", {
 	template: `
+    
     <div id="app">
-    <div class="section1">
-        <button id="theme" class="section1--button" @click="generateTheme">Click to generate a theme</button>
-        <p id="result" class="section1--result"></p>
+    <h1>{{ name }}</h1>
+    <div id="containerSections">
+    <div class="section1 sections">
+        <button id="theme" class="button" @click="generateTheme">Click to generate a theme</button>
+        <p id="result" class="result"></p>
     </div>
-    <div class="section2">
-        <button id="site" class="section2--button" @click="generateType">
+    <div class="section2 sections">
+        <button id="site" class="button" @click="generateType">
             Click to generate a type of site
         </button>
-        <p id="resultSite" class="section2--result"></p>
+        <p id="resultSite" class="result"></p>
     </div>
+    </div>
+ 
 </div>
     `,
 	data() {
 		return {
+			name: "Generateur theme challenge",
 			themeGenerator: [
 				"Fleurs",
 				"Immobilier",
