@@ -1,22 +1,24 @@
 {
-  "name": "theme",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexannebrunold/theme.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexannebrunold/theme/issues"
-  },
-  "homepage": "https://github.com/alexannebrunold/theme#readme",
-  "dependencies": {
-    "parcel": "^1.12.4"
-  }
+	"name": "theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel src/index.html src/index.html",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "parcel build src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alexannebrunold/theme.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alexannebrunold/theme/issues"
+	},
+	"homepage": "https://github.com/alexannebrunold/theme#readme",
+	"dependencies": {
+		"parcel": "^1.12.4"
+	}
 }
